@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue - StreamTout</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background-color: #121212;
+        }
+
+        /* Barre de navigation */
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #FFD700;
+            margin-left: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .grid article {
+            text-align: center;
+        }
+
+        .grid img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        footer {
+            margin-top: 30px;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <header>
+        <nav>
+            <div class="logo">StreamTout</div>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+        <section>
+            <h2>Catalogue</h2>
+            <p>Découvrez tous les contenus disponibles sur StreamTout.</p>
+            <div class="grid">
+                <!-- Films disponibles -->
+                <article>
+                    <a href="watch.html">
+                        <img src="assets/d2570a078e34a1e40b4988a5b77a3728.jpg" alt="Film 1">
+                        <h3>A Contre Sens 2</h3>
+                    </a>
+                </article>
+                <article>
+                    <a href="assets/Film Corpse Bride 2005 Tlchargement (gratuit).mp4">
+                        <img src="assets/noces-funebres-40x60ok.jpg" alt="Film 2">
+                        <h3>Les Noces funèbres (2005)</h3>
+                    </a>
+                </article>
+                <article>
+                    <a href="assets/Film Deadpool & Wolverine (2024) en streaming complet_2.mp4">
+                        <img src="assets/image_9b066416.jpeg" alt="Film 3">
+                        <h3>Deadpool & Wolverine (2024)</h3>
+                    </a>
+                </article>
+                <article>
+                    <a href="https://sharecloudy.com/iframe/CMDrAXolHS">
+                        <img src="assets/aosm8NMQ3UyoBVpSxyimorCQykC.jpg" alt="Film 4">
+                        <h3>Venom : The Last Dance (2024) HD</h3>
+                    </a>
+                </article>
+                <article>
+                    <a href="assets/Film Example 5.mp4">
+                        <img src="assets/example5.jpg" alt="Film 5">
+                        <h3>Nouveau Film Exemple</h3>
+                    </a>
+                </article>
+                <article>
+                    <a href="assets/Film Example 6.mp4">
+                        <img src="assets/example6.jpg" alt="Film 6">
+                        <h3>Film Surprise 2024</h3>
+                    </a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2024 StreamTout - Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

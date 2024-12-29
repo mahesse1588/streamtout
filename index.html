@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamTout</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background-color: #121212;
+        }
+
+        /* Barre de navigation */
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #FFD700;
+            margin-left: 20px;
+        }
+
+        nav .search-bar {
+            flex-grow: 1;
+            margin: 0 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav .search-bar input[type="text"] {
+            width: 50%;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        nav .search-bar button {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            background-color: #FFD700;
+            color: black;
+            font-weight: bold;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        nav .search-bar button:hover {
+            background-color: #e5c100;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .header-text {
+            margin-top: 20px;
+        }
+
+        .header-text h1 {
+            font-size: 2.5em;
+            color: #FFD700;
+            margin-bottom: 10px;
+        }
+
+        .header-text p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .header-image {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        /* Chaque article prend 30% de la largeur pour avoir 3 films par ligne */
+        .grid article {
+            width: 30%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .grid img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        footer {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav>
+        <div class="logo">StreamTout</div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Rechercher un film...">
+            <button onclick="searchMovies()">Rechercher</button>
+        </div>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="catalogue.html">Catalogue</a></li>
+        </ul>
+    </nav>
+
+    <!-- Texte d'en-tête -->
+    <header class="header-text">
+        <h1>Bienvenue sur StreamTout !</h1>
+        <p>Bienvenue sur notre site Internet, votre futur préféré pour le streaming.</p>
+        <p>Découvrez des films tendances et bien plus encore. 🍿 BON FILM !! 🍿</p>
+        <img src="assets/Sans titre-1.png" alt="Image en haut du site" class="header-image">
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+        <section id="featured">
+            <h2>Nos Films</h2>
+            <div class="grid">
+                <article>
+                    <a href="watch.html">
+                        <img src="assets/d2570a078e34a1e40b4988a5b77a3728.jpg" alt="Film 1">
+                        <h3>A Contre Sens 2</h3>
+                    </a>
+                </article>
+                <article>
+                    <a href="assets/Film Corpse Bride 2005 Tlchargement (gratuit).mp4">
+                        <img src="assets/noces-funebres-40x60ok.jpg" alt="Film 2">
+                        <h3>Les Noces funèbres (2005)</h3>
+                    </a>
+                </article>
+                <article>
+                    <a href="assets/Film Deadpool & Wolverine (2024) en streaming complet_2.mp4">
+                        <img src="assets/image_9b066416.jpeg" alt="Film 3">
+                        <h3>Deadpool & Wolverine (2024)</h3>
+                    </a>
+                </article>
+                <article>
+                    <a href="https://sharecloudy.com/iframe/CMDrAXolHS">
+                        <img src="assets/aosm8NMQ3UyoBVpSxyimorCQykC.jpg" alt="Film 4">
+                        <h3>Venom : The Last Dance (2024) HD</h3>
+                    </a>
+                </article>
+                <article>
+                    <a href="https://cloudmatoc.com/iframe/P549gKIpCn">
+                        <img src="assets/7R1EXkBAKunoG0UhZToFrnlStcp.jpg" alt="Film 5">
+                        <h3>Venom : Gladiator II (2024) HD</h3>
+                    </a>
+                </article>
+                <article>
+                    <a href="https://sharecloudy.com/iframe/4wzswReHOj">
+                        <img src="assets/bcDGIZKQ959tnMn0qLl6GxOkbO3 (1).jpg" alt="Film 6">
+                        <h3>Le Seigneur des Anneaux : La Guerre des Rohirrim (2024) HD</h3>
+                    </a>
+                </article>
+                <article>
+                    <a href="https://cloudmatoc.com/iframe/vCtHDTQ3QE">
+                        <img src="assets/e5hgZBkL1kvY0fGPixZD0468VIA.jpg" alt="Film 7">
+                        <h3>L'Étrange Noël de monsieur Jack (1993) HD</h3>
+                    </a>
+                </article>
+                <article>
+                    <a href="https://sharecloudy.com/iframe/c7CIDJIxns">
+                        <img src="assets/bYovCvLV1RxB0zAR5cXu699P9P7.jpg" alt="Film 8">
+                        <h3>Moi, moche et méchant 4 (2024) HD</h3>
+                    </a>
+                </article>
+                <article>
+                    <a href="https://cloudmatoc.com/iframe/6dCIijchYD">
+                        <img src="assets/cWJGZAozNQFKLCD8vv4ukw4nJP8.jpg" alt="Film 9">
+                        <h3>Joker : Folie à deux (2024) HD</h3>
+                    </a>
+                </article>
+                <article>
+                    <a href="https://sharecloudy.com/iframe/u2tPw6nvoc">
+                        <img src="assets/cmbQRAux3YdOIIk9RIj1Hq3C05f.jpg" alt="Film 10">
+                        <h3>Le Grinch (2000) HD</h3>
+                    </a>
+                </article>
+                <article>
+                    <a href="https://sharecloudy.com/iframe/I0XHRak24P">
+                        <img src="assets/ucClmPlyDzO9SiEw8VBjIszseAs.jpg" alt="Film 11">
+                        <h3>Fêlés (2024) HD</h3>
+                    </a>
+                </article>
+                <article>
+                    <a href="https://cloudmatoc.com/iframe/UHGM9FO2BQ">
+                        <img src="assets/t2uzLdF5jQPKVCAz5OLxa1mO7LB.jpg" alt="Film 12">
+                        <h3>Scandaleusement vôtre (2024) HD</h3>
+                    </a>
+                </article>
+                <article>
+                    <a href="https://cloudmatoc.com/iframe/yhLeqlsmCF">
+                        <img src="assets/7RSCL6V8BlekgVnNPok6tLW50tP.jpg" alt="Film 13">
+                        <h3>Sonic 2, le film (2022) HD</h3>
+                    </a>
+                </article>
+                <article>
+                    <a href="https://sharecloudy.com/iframe/ch3EYJsO3b">
+                        <img src="assets/bwBkzMHDAAfnmbbRT3VOVQLKF3q.jpg" alt="Film 14">
+                        <h3>Red One (2024) HD</h3>
+                    </a>
+                </article>
+                <article>
+                    <a href="https://cloudmatoc.com/iframe/h7Kpok0nwB">
+                        <img src="assets/bHd2ry2KYR109dl87agYQ2nCsnR.jpg" alt="Film 15">
+                        <h3>Le Comte de Monte-Cristo (2024) HD</h3>
+                    </a>
+                </article>
+                <article>
+                    <a href="https://sharecloudy.com/iframe/ZuChKnrhyl">
+                        <img src="assets/eKYHtz7hPjE92oolbjNe4aYmiAp.jpg" alt="Film 16">
+                        <h3>The Beast Within (2024) HD</h3>
+                    </a>
+                        
+                        
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 StreamTout - Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        function searchMovies() {
+            const input = document.getElementById("searchInput").value.toLowerCase();
+            const articles = document.querySelectorAll(".grid article");
+
+            if (input.trim() === "") {
+                articles.forEach(article => {
+                    article.style.display = "block";
+                });
+                return;
+            }
+
+            let found = false;
+            articles.forEach(article => {
+                const title = article.querySelector("h3").textContent.toLowerCase();
+                if (title.includes(input)) {
+                    article.style.display = "block";
+                    found = true;
+                } else {
+                    article.style.display = "none";
+                }
+            });
+
+            if (!found) {
+                alert("Aucun film trouvé pour votre recherche.");
+            }
+        }
+    </script>
+</body>
+</html>
